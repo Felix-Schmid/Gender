@@ -257,6 +257,10 @@ footer {
 		display: block;
 	}
 	
+	article {
+		text-align: left;
+	}
+	
 	.mobileOrder {
 		order: 1;
 	}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<title>Gender Überblick - Seite durchsuchen</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="tipuesearch/tipuesearch.css">
+	<script src="scripts.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-with, initial-scale=1.0">
+	
+	<meta name="author" content="Dr. Heinz Schmid"/>
+	<meta name="keywords" content="Excel, VBA, Wärmetechnik, Robotik, Energie, Mikrocontroller, Umwelttechnik, Open Source, Wärmeübertragung, Wärmetauscher, Python, Heinz Schmid, Maschinenbau, EAF, Buch"/>
+	<meta name="description" content="Private Seite von Dr. Heinz Schmid über Wärmetechnik, Tabellenkalkulation, Robotik, Mikrocontroller, Umwelttechnik und Open Source."/>
+	<meta name="page-topic" content="Forschung Technik"/>
+</head>
+<body>
+
+<header>
+	<div id="topnav">
+		<div class="topnavButton mobileShow"> <button class="menuButton" onClick="toggleMobileMenu();"><img src="Icons/menu.png" alt="Menü" id="menuIcon"></button> </div>
+		<div id="title">
+			<div id="titleContent">
+				<h1> Thema Gender </h1>
+				Ein Überblick
+			</div>
+		</div>
+		<div class="topnavButton mobileExpand"> <a href="sitemap.html">Seitenübersicht</a> </div>
+		<div class="topnavButton mobileExpand"> <a href="about.html">Website-Infos</a> </div>
+	</div>
+</header>
+
+<main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="tipuesearch/tipuesearch_content.js"></script>
+<script src="tipuesearch/tipuesearch_set.js"></script>
+<script src="tipuesearch/tipuesearch.min.js"></script>
+
+<script>
+$(document).ready(function() {
+	$('#tipue_search_input').tipuesearch();
+});
+</script>
+
+<article>
+<div id="breadcrumbs">
+	<a href="index.html">Startseite</a> » Seite durchsuchen
+</div>
+	
+<h2>Seite durchsuchen</h2>
+
+<form action="search.html">
+		<input type="text" alt="search" name="q" placeholder="Seite durchsuchen..." id="tipue_search_input" class="searchInput" pattern=".{3,}" title="Mindestens 3 Zeichen" required>
+</form>
+
+<div id="tipue_search_content"></div>
+</article>
+
+</main>
+
+<footer>
+	Copyright © 2021 Felix Schmid
+</footer>
+
+</body>
+</html>
